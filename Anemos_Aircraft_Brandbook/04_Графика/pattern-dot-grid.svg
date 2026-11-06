@@ -1,0 +1,1 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800"><title>Точечная сетка</title><defs><pattern id="d" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="10" y="10" width="4.8" height="4.8" fill="#A9BCBD"/></pattern></defs><rect width="1200" height="800" fill="#FFF8F0"/><rect width="1200" height="800" fill="url(#d)"/></svg>

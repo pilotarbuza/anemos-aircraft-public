@@ -1,0 +1,67 @@
+{
+  "name": "Anemos Aircraft",
+  "version": 1,
+  "color": {
+    "themes": [{"id": "light", "name": "Молочный шёлк"}, {"id": "dark", "name": "Ночной полёт"}],
+    "tokens": [
+      {"name": "ground", "value": {"light": "#FFF8F0", "dark": "#0C1517"}, "usage": "Фон страницы и слайдов. Тёплый «Молочный шёлк» днём, «Ночной полёт» в тёмной теме."},
+      {"name": "surface", "value": {"light": "#F1EEE6", "dark": "#14232A"}, "usage": "Карточки, панели характеристик, подложки таблиц поверх ground."},
+      {"name": "ink", "value": {"light": "#1F3A45", "dark": "#F3EDE4"}, "usage": "Основной текст на ground и surface. Днём это «Глубина» — тёмная морская бирюза."},
+      {"name": "ink-muted", "value": {"light": "#536A72", "dark": "#97B0B4"}, "usage": "Подписи, единицы измерения, вторичный текст на ground и surface (≥4.5:1 в обеих темах)."},
+      {"name": "breeze", "value": {"light": "#0B7A85", "dark": "#4FC7C4"}, "usage": "«Бриз» — фирменный бирюзовый: знак, главная кнопка, акцентные заголовки, крупные плашки. Текстом — только на ground/surface."},
+      {"name": "on-breeze", "value": {"light": "#FFF8F0", "dark": "#0C1517"}, "usage": "Текст и знак поверх заливки breeze."},
+      {"name": "storm", "value": {"light": "#1F3A45", "dark": "#2A4A55"}, "usage": "«Глубина» — глубокие плашки, тёмные блоки обложек и инфографики. Текст на нём — on-storm."},
+      {"name": "on-storm", "value": {"light": "#FFF8F0", "dark": "#F3EDE4"}, "usage": "Текст и знак поверх заливки storm."},
+      {"name": "ice", "value": {"light": "#BFE6E4", "dark": "#173A40"}, "usage": "«Морская дымка» — светлые подложки, заливки графиков, фон зерновых градиентов. Текст на ней — ink."},
+      {"name": "fog", "value": {"light": "#A9BCBD", "dark": "#47595C"}, "usage": "Нейтральный «туман» неофутуризма: неактивные элементы, вторичные блоки, точки сетки. Не для текста."},
+      {"name": "garnet", "value": {"light": "#E8492A", "dark": "#FF6A4A"}, "usage": "«Гранат» — сигнальный огонь. Только малые доли: точка-огонь в логотипе, индикаторы, предупреждения. Не фон для текста."},
+      {"name": "garnet-ink", "value": {"light": "#B8361C", "dark": "#FF8A6E"}, "usage": "Гранатовый текст на ground/surface: предупреждения, отклонения от расчёта (≥4.5:1)."},
+      {"name": "matcha", "value": {"light": "#3F7A45", "dark": "#8CC48A"}, "usage": "Статус «в норме / подтверждено испытанием». Текстом на ground/surface; как точка-индикатор."},
+      {"name": "line", "value": {"light": "#DCD6CC", "dark": "#24363C"}, "usage": "Волосяные линии швейцарской сетки, разделители таблиц, рамки полей."},
+      {"name": "focus-ring", "value": "{breeze}", "usage": "Кольцо фокуса клавиатуры: 2px зазор цвета ground, затем 2px breeze."}
+    ]
+  },
+  "type": {
+    "families": {
+      "display": "\"Unbounded\", \"Manrope\", system-ui, sans-serif",
+      "text": "\"Manrope\", system-ui, sans-serif",
+      "mono": "\"JetBrains Mono\", ui-monospace, monospace",
+      "dot": "\"Doto\", \"JetBrains Mono\", monospace"
+    },
+    "groups": [
+      {"name": "Display", "family": "display", "styles": [
+        {"name": "display-xl", "fontSize": "72px", "lineHeight": "72px", "fontWeight": 600, "letterSpacing": "-0.02em"},
+        {"name": "display-l", "fontSize": "48px", "lineHeight": "52px", "fontWeight": 600, "letterSpacing": "-0.01em"},
+        {"name": "heading", "fontSize": "28px", "lineHeight": "34px", "fontWeight": 500}
+      ]},
+      {"name": "Text", "family": "text", "styles": [
+        {"name": "lead", "fontSize": "20px", "lineHeight": "30px", "fontWeight": 500},
+        {"name": "body", "fontSize": "16px", "lineHeight": "24px", "fontWeight": 400},
+        {"name": "small", "fontSize": "13px", "lineHeight": "18px", "fontWeight": 500}
+      ]},
+      {"name": "Data", "family": "mono", "styles": [
+        {"name": "data", "fontSize": "14px", "lineHeight": "20px", "fontWeight": 500},
+        {"name": "label-caps", "fontSize": "11px", "lineHeight": "14px", "fontWeight": 600, "letterSpacing": "0.12em"}
+      ]},
+      {"name": "Dot matrix", "family": "dot", "styles": [
+        {"name": "readout", "fontSize": "48px", "lineHeight": "48px", "fontWeight": 800}
+      ]}
+    ]
+  },
+  "spacing": {"tokens": [
+    {"name": "space-1", "value": "4px", "usage": "Шаг сетки 4px; зазор между значением и единицей."},
+    {"name": "space-2", "value": "8px", "usage": "Внутри меток и тегов, шаг точечного паттерна."},
+    {"name": "space-3", "value": "12px", "usage": "Вертикальный отступ кнопок, строки таблиц."},
+    {"name": "space-4", "value": "16px", "usage": "Поля карточек, межколоночный гаттер на мобильных."},
+    {"name": "space-6", "value": "24px", "usage": "Гаттер 12-колоночной сетки, поля слайдов-карточек."},
+    {"name": "space-8", "value": "32px", "usage": "Между блоками внутри секции."},
+    {"name": "space-12", "value": "48px", "usage": "Поля постеров и слайдов."},
+    {"name": "space-16", "value": "64px", "usage": "Между секциями страницы."}
+  ]},
+  "radius": {"tokens": [
+    {"name": "radius-none", "value": "0px", "usage": "Плашки, блоки сетки, точки-пиксели. Бренд по умолчанию прямоугольный."},
+    {"name": "radius-sm", "value": "4px", "usage": "Поля ввода, теги, бортовой номер."},
+    {"name": "radius-md", "value": "8px", "usage": "Кнопки, карточки характеристик."},
+    {"name": "radius-pill", "value": "999px", "usage": "Только «стеклянные» капсулы на зерновых градиентах."}
+  ]}
+}

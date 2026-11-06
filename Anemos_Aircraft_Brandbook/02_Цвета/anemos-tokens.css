@@ -1,0 +1,68 @@
+/* Anemos Aircraft — цветовые и базовые токены. Светлая тема по умолчанию, тёмная — [data-theme="dark"]. */
+:root {
+  --ground: #FFF8F0;
+  --surface: #F1EEE6;
+  --ink: #1F3A45;
+  --ink-muted: #536A72;
+  --breeze: #0B7A85;
+  --on-breeze: #FFF8F0;
+  --storm: #1F3A45;
+  --on-storm: #FFF8F0;
+  --ice: #BFE6E4;
+  --fog: #A9BCBD;
+  --garnet: #E8492A;
+  --garnet-ink: #B8361C;
+  --matcha: #3F7A45;
+  --line: #DCD6CC;
+  --focus-ring: var(--breeze);
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --radius-none: 0px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 999px;
+  --font-display: "Unbounded", "Manrope", system-ui, sans-serif;
+  --font-text: "Manrope", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+  --font-dot: "Doto", "JetBrains Mono", monospace;
+}
+[data-theme="dark"] {
+  --ground: #0C1517;
+  --surface: #14232A;
+  --ink: #F3EDE4;
+  --ink-muted: #97B0B4;
+  --breeze: #4FC7C4;
+  --on-breeze: #0C1517;
+  --storm: #2A4A55;
+  --on-storm: #F3EDE4;
+  --ice: #173A40;
+  --fog: #47595C;
+  --garnet: #FF6A4A;
+  --garnet-ink: #FF8A6E;
+  --matcha: #8CC48A;
+  --line: #24363C;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --ground: #0C1517;
+    --surface: #14232A;
+    --ink: #F3EDE4;
+    --ink-muted: #97B0B4;
+    --breeze: #4FC7C4;
+    --on-breeze: #0C1517;
+    --storm: #2A4A55;
+    --on-storm: #F3EDE4;
+    --ice: #173A40;
+    --fog: #47595C;
+    --garnet: #FF6A4A;
+    --garnet-ink: #FF8A6E;
+    --matcha: #8CC48A;
+    --line: #24363C;
+  }
+}
