@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Anemos Aircraft: электрический беспилотник с вертикальным взлетом" width="100%">
+</p>
+
 # Anemos Aircraft
 
 [English](README.md) · [Русский](README.ru.md)
